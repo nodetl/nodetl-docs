@@ -26,15 +26,24 @@ jobs:
       - name: Build website
         run: npm run build
 
-      - name: Deploy to server
+      - name: Build Docker image
         if: github.ref == 'refs/heads/main'
         run: |
-          # Create directory if not exists and deploy build folder
-          sudo mkdir -p /var/www/nodetl-docs
-          sudo chown -R $USER:$USER /var/www/nodetl-docs
-          rsync -avz --delete build/ /var/www/nodetl-docs/
+          docker build -t nodetl-docs:latest .
+        
+      - name: Stop and remove existing container
+        if: github.ref == 'refs/heads/main'
+        run: |
+          docker stop nodetl-docs || true
+          docker rm nodetl-docs || true
+        
+      - name: Run Docker container
+        if: github.ref == 'refs/heads/main'
+        run: |
+          docker run -d --name nodetl-docs -p 8604:80 --restart unless-stopped nodetl-docs:latest
         
       - name: Verify deployment
         if: github.ref == 'refs/heads/main'
         run: |
+          sleep 5
           curl -f http://localhost:8604/ || exit 1
