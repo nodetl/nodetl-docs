@@ -46,6 +46,15 @@ const config: Config = {
         href: 'https://fonts.googleapis.com',
       },
     },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preload',
+        href: '/img/logo.svg',
+        as: 'image',
+        type: 'image/svg+xml',
+      },
+    },
     // Structured Data for Organization
     {
       tagName: 'script',
