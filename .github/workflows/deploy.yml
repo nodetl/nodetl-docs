@@ -29,7 +29,9 @@ jobs:
       - name: Deploy to server
         if: github.ref == 'refs/heads/main'
         run: |
-          # Deploy build folder to web server on port 8604
+          # Create directory if not exists and deploy build folder
+          sudo mkdir -p /var/www/nodetl-docs
+          sudo chown -R $USER:$USER /var/www/nodetl-docs
           rsync -avz --delete build/ /var/www/nodetl-docs/
         
       - name: Verify deployment
