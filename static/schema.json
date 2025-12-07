@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "NodeTL",
+  "alternateName": "NodeTL Data Mapping Platform",
+  "description": "A powerful visual data mapping and transformation platform for building ETL pipelines and automating data workflows.",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Cross-platform",
+  "softwareVersion": "1.0.0",
+  "url": "https://github.com/nodetl/nodetl",
+  "downloadUrl": "https://github.com/nodetl/nodetl/releases",
+  "screenshot": "https://nodetl.github.io/nodetl-docs/img/screenshot.png",
+  "author": {
+    "@type": "Organization",
+    "name": "NodeTL",
+    "url": "https://github.com/nodetl"
+  },
+  "maintainer": {
+    "@type": "Organization",
+    "name": "NodeTL",
+    "url": "https://github.com/nodetl"
+  },
+  "license": "https://opensource.org/licenses/MIT",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "featureList": [
+    "Visual data mapping with drag-and-drop interface",
+    "Workflow automation with node-based designer",
+    "REST API integration",
+    "AI-powered test data generation",
+    "Role-based access control",
+    "Docker and Kubernetes deployment",
+    "OAuth authentication (Google, Microsoft)",
+    "Real-time workflow execution"
+  ],
+  "programmingLanguage": ["Go", "TypeScript", "JavaScript"],
+  "runtimePlatform": ["Docker", "Kubernetes", "Linux", "macOS", "Windows"],
+  "keywords": [
+    "ETL",
+    "data mapping",
+    "data transformation",
+    "workflow automation",
+    "API integration",
+    "data pipeline",
+    "visual programming",
+    "open source"
+  ]
+}

@@ -1,0 +1,116 @@
+# NodeTL - Visual Data Mapping and Transformation Platform
+
+> This document provides a comprehensive overview of NodeTL for AI systems and LLMs.
+
+## What is NodeTL?
+
+NodeTL is an open-source, visual data mapping and transformation platform designed for building ETL (Extract, Transform, Load) pipelines and automating data workflows. It provides an intuitive drag-and-drop interface for designing complex data mappings without writing code.
+
+## Core Capabilities
+
+### 1. Visual Data Mapping
+- Drag-and-drop interface for mapping fields between schemas
+- Support for complex nested structures and arrays
+- Built-in transformation functions (string, number, date, array)
+- Type coercion and validation
+
+### 2. Workflow Automation
+- Node-based visual workflow designer
+- Multiple trigger types (webhook, schedule, manual)
+- HTTP request integration for API calls
+- Conditional branching and loops
+- Custom JavaScript code execution
+
+### 3. Schema Management
+- JSON Schema-based data structure definitions
+- Reusable schemas across workflows
+- Validation and type checking
+- AI-assisted test data generation
+
+### 4. Enterprise Features
+- Role-based access control (RBAC)
+- OAuth authentication (Google, Microsoft)
+- JWT token-based API authentication
+- Audit logging and execution history
+
+## Technology Stack
+
+- **Backend**: Go with Gin framework
+- **Frontend**: React with TypeScript
+- **Database**: MongoDB
+- **Deployment**: Docker, Kubernetes
+
+## Key Node Types
+
+1. **Trigger** - Entry point for workflows (webhook, schedule, manual)
+2. **Transform** - Apply data mappings between schemas
+3. **HTTP Request** - Call external REST APIs
+4. **Condition** - Branch workflow based on conditions
+5. **Loop** - Iterate over arrays and collections
+6. **Code** - Execute custom JavaScript
+7. **Response** - Configure HTTP response output
+
+## Common Use Cases
+
+1. **API Integration** - Map data between different API formats
+2. **ETL Pipelines** - Extract, transform, and load data between systems
+3. **Data Migration** - Transform schemas during system migrations
+4. **Webhook Processing** - Receive and transform webhook payloads
+5. **Data Synchronization** - Keep data in sync across services
+
+## API Endpoints
+
+Base URL: `/api/v1`
+
+### Authentication
+- `POST /auth/login` - User login
+- `POST /auth/register` - User registration
+- `POST /auth/refresh` - Refresh JWT token
+
+### Workflows
+- `GET /workflows` - List all workflows
+- `POST /workflows` - Create workflow
+- `GET /workflows/:id` - Get workflow details
+- `PUT /workflows/:id` - Update workflow
+- `DELETE /workflows/:id` - Delete workflow
+- `POST /workflows/:id/execute` - Execute workflow
+
+### Schemas
+- `GET /schemas` - List schemas
+- `POST /schemas` - Create schema
+- `POST /schemas/:id/validate` - Validate data against schema
+
+### Mappings
+- `GET /mappings` - List mappings
+- `POST /mappings` - Create mapping
+- `POST /mappings/:id/test` - Test mapping with sample data
+
+### Executions
+- `GET /executions` - List execution history
+- `GET /executions/:id` - Get execution details
+
+### Webhooks
+- `POST /webhooks/:workflowId` - Trigger workflow via webhook
+
+## Deployment Options
+
+1. **Docker Compose** - Recommended for development and small deployments
+2. **All-in-One Docker** - Single container with all components
+3. **Kubernetes** - Production-grade scalable deployment
+
+## Configuration
+
+Key environment variables:
+- `MONGODB_URI` - MongoDB connection string
+- `JWT_SECRET` - Secret for JWT token signing
+- `OPENAI_API_KEY` - Optional, for AI features
+
+## License
+
+NodeTL is released under the MIT License.
+
+## Links
+
+- Repository: https://github.com/nodetl/nodetl
+- Documentation: https://nodetl.github.io/nodetl-docs/
+- Issues: https://github.com/nodetl/nodetl/issues

@@ -1,0 +1,43 @@
+# Robots.txt for NodeTL Documentation
+# https://nodetl.github.io/nodetl-docs/
+
+User-agent: *
+Allow: /
+
+# Allow all major search engine crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Allow AI crawlers for AIEO
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# Sitemap location
+Sitemap: https://nodetl.github.io/nodetl-docs/sitemap.xml
