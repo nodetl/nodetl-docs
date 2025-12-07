@@ -7,7 +7,7 @@ Official documentation website for [NodeTL](https://github.com/nodetl/nodetl) - 
 
 ## 🌐 Live Site
 
-Visit the documentation at: https://nodetl.github.io/nodetl-docs/
+Visit the documentation at: https://nodetl.moclawr.com/nodetl-docs/
 
 ## 🚀 Getting Started
 

@@ -1,5 +1,5 @@
 # Robots.txt for NodeTL Documentation
-# https://nodetl.github.io/nodetl-docs/
+# https://nodetl.moclawr.com/
 
 User-agent: *
 Allow: /
@@ -40,4 +40,4 @@ User-agent: YouBot
 Allow: /
 
 # Sitemap location
-Sitemap: https://nodetl.github.io/nodetl-docs/sitemap.xml
+Sitemap: https://nodetl.moclawr.com/sitemap.xml

@@ -8,10 +8,9 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://nodetl.github.io',
+  url: 'https://nodetl.moclawr.com',
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/nodetl-docs/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   organizationName: 'nodetl',
@@ -24,6 +23,23 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        language: ['en'],
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+        docsRouteBasePath: '/docs',
+        blogRouteBasePath: '/blog',
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: true,
+      },
+    ],
+  ],
 
   presets: [
     [
@@ -67,7 +83,7 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          to: '/docs/api',
+          to: '/docs/api/overview',
           label: 'API Reference',
           position: 'left',
         },
@@ -87,15 +103,15 @@ const config: Config = {
           items: [
             {
               label: 'Getting Started',
-              to: '/docs/getting-started',
+              to: '/docs/getting-started/installation',
             },
             {
               label: 'API Reference',
-              to: '/docs/api',
+              to: '/docs/api/overview',
             },
             {
               label: 'Deployment',
-              to: '/docs/deployment',
+              to: '/docs/deployment/docker-compose',
             },
           ],
         },
@@ -136,13 +152,6 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
       additionalLanguages: ['bash', 'json', 'go', 'typescript', 'yaml', 'docker'],
-    },
-    algolia: {
-      // Optional: Configure Algolia search
-      appId: 'YOUR_APP_ID',
-      apiKey: 'YOUR_SEARCH_API_KEY',
-      indexName: 'nodetl',
-      contextualSearch: true,
     },
   } satisfies Preset.ThemeConfig,
 };

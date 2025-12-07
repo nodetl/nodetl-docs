@@ -217,12 +217,6 @@ Try adding these nodes to your workflow:
 - [All Node Types](/docs/nodes/trigger) - Learn about each node
 - [API Integration](/docs/api/overview) - Automate with the API
 
-### Example Use Cases
-
-- [API Integration Tutorial](/docs/tutorials/api-integration)
-- [ETL Pipeline Example](/docs/tutorials/etl-pipeline)
-- [Webhook Processing](/docs/tutorials/webhook-processing)
-
 ## Tips for Success
 
 :::tip Best Practices

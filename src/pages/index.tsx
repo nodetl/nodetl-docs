@@ -96,6 +96,13 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
+        <img 
+          src="/img/logo.svg" 
+          alt="NodeTL Logo" 
+          className={styles.heroLogo}
+          width="120"
+          height="120"
+        />
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
@@ -112,7 +119,7 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--secondary button--lg margin-left--md"
-            to="/docs/intro">
+            to="/docs/">
             Learn More
           </Link>
         </div>

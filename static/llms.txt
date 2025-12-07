@@ -112,5 +112,5 @@ NodeTL is released under the MIT License.
 ## Links
 
 - Repository: https://github.com/nodetl/nodetl
-- Documentation: https://nodetl.github.io/nodetl-docs/
+- Documentation: https://nodetl.moclawr.com/nodetl-docs/
 - Issues: https://github.com/nodetl/nodetl/issues

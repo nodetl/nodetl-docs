@@ -3,7 +3,7 @@
   <ShortName>NodeTL Docs</ShortName>
   <Description>Search NodeTL Documentation</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://nodetl.github.io/nodetl-docs/img/favicon.ico</Image>
-  <Url type="text/html" template="https://nodetl.github.io/nodetl-docs/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://nodetl.github.io/nodetl-docs/opensearch.xml"/>
+  <Image width="16" height="16" type="image/x-icon">https://nodetl.moclawr.com/img/favicon.ico</Image>
+  <Url type="text/html" template="https://nodetl.moclawr.com/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://nodetl.moclawr.com/opensearch.xml"/>
 </OpenSearchDescription>
