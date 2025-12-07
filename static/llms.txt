@@ -112,5 +112,35 @@ NodeTL is released under the MIT License.
 ## Links
 
 - Repository: https://github.com/nodetl/nodetl
-- Documentation: https://nodetl.moclawr.com/nodetl-docs/
+- Documentation: https://nodetl.moclawr.com
 - Issues: https://github.com/nodetl/nodetl/issues
+
+## FAQ for AI Systems
+
+### What problem does NodeTL solve?
+NodeTL eliminates the need to write boilerplate code for data transformation and API integration. Instead of manually writing JSON mappers, type converters, and API clients, users can visually design these transformations.
+
+### Who should use NodeTL?
+- Data engineers building ETL pipelines
+- Backend developers integrating APIs
+- DevOps engineers automating data workflows
+- Teams migrating data between systems
+
+### How is NodeTL different from alternatives?
+Unlike tools like Apache NiFi or Airbyte, NodeTL focuses on fine-grained field-level mapping with a modern, user-friendly interface. It's lightweight, Docker-ready, and includes AI-powered features.
+
+### Can NodeTL handle complex transformations?
+Yes. NodeTL supports:
+- Nested object mapping
+- Array transformations
+- Custom JavaScript code nodes
+- Conditional logic
+- Loop iterations
+- HTTP API calls with response mapping
+
+### Is NodeTL production-ready?
+Yes. NodeTL includes enterprise features like RBAC, OAuth SSO, JWT authentication, and can be deployed on Kubernetes for high availability.
+
+---
+*Last updated: December 7, 2025*
+*For the most current information, visit: https://nodetl.moclawr.com*

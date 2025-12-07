@@ -24,6 +24,101 @@ const config: Config = {
     locales: ['en'],
   },
 
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'google-site-verification',
+        content: 'I_1RsHQ7QpnWMZGMJ72yXWpUfkbmp4jrDw77xzboGVs',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'robots',
+        content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://fonts.googleapis.com',
+      },
+    },
+    // Structured Data for Organization
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'application/ld+json',
+      },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'NodeTL',
+        url: 'https://nodetl.moclawr.com',
+        logo: 'https://nodetl.moclawr.com/img/logo.svg',
+        sameAs: [
+          'https://github.com/nodetl/nodetl',
+          'https://github.com/nodetl/nodetl-docs',
+        ],
+      }),
+    },
+    // Structured Data for WebSite with SearchAction
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'application/ld+json',
+      },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'NodeTL Documentation',
+        url: 'https://nodetl.moclawr.com',
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: {
+            '@type': 'EntryPoint',
+            urlTemplate: 'https://nodetl.moclawr.com/search?q={search_term_string}',
+          },
+          'query-input': 'required name=search_term_string',
+        },
+      }),
+    },
+    // Structured Data for SoftwareApplication
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'application/ld+json',
+      },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'SoftwareApplication',
+        name: 'NodeTL',
+        alternateName: 'NodeTL Data Mapping Platform',
+        description: 'A powerful visual data mapping and transformation platform for building ETL pipelines and automating data workflows.',
+        applicationCategory: 'DeveloperApplication',
+        operatingSystem: 'Cross-platform',
+        softwareVersion: '1.0.0',
+        url: 'https://github.com/nodetl/nodetl',
+        downloadUrl: 'https://github.com/nodetl/nodetl/releases',
+        screenshot: 'https://nodetl.moclawr.com/img/dashboard.png',
+        author: {
+          '@type': 'Organization',
+          name: 'NodeTL',
+          url: 'https://github.com/nodetl',
+        },
+        license: 'https://opensource.org/licenses/MIT',
+        isAccessibleForFree: true,
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'USD',
+        },
+      }),
+    },
+  ],
+
   themes: [
     [
       '@easyops-cn/docusaurus-search-local',
@@ -48,6 +143,15 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/nodetl/nodetl-docs/tree/main/',
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
+        },
+        sitemap: {
+          lastmod: 'date',
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
         },
         blog: {
           showReadingTime: true,
@@ -68,7 +172,17 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/nodetl-social-card.png',
+    image: 'img/dashboard.png',
+    // Global metadata for SEO
+    metadata: [
+      { name: 'keywords', content: 'NodeTL, ETL, data mapping, data transformation, workflow automation, API integration, visual programming, open source, Docker, Kubernetes' },
+      { name: 'author', content: 'NodeTL Team' },
+      { name: 'application-name', content: 'NodeTL' },
+      { property: 'og:site_name', content: 'NodeTL Documentation' },
+      { property: 'og:type', content: 'website' },
+      { name: 'twitter:site', content: '@nodetl' },
+      { name: 'twitter:creator', content: '@nodetl' },
+    ],
     navbar: {
       title: 'NodeTL',
       logo: {
