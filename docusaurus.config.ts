@@ -197,6 +197,8 @@ const config: Config = {
       logo: {
         alt: 'NodeTL Logo',
         src: 'img/logo.svg',
+        width: 32,
+        height: 32,
       },
       items: [
         {
