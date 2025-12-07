@@ -29,10 +29,10 @@ jobs:
       - name: Deploy to server
         if: github.ref == 'refs/heads/main'
         run: |
-          # Deploy build folder to web server
+          # Deploy build folder to web server on port 8604
           rsync -avz --delete build/ /var/www/nodetl-docs/
         
       - name: Verify deployment
         if: github.ref == 'refs/heads/main'
         run: |
-          curl -f https://nodetl.moclawr.com/ || exit 1
+          curl -f http://localhost:8604/ || exit 1
