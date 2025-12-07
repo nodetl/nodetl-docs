@@ -189,25 +189,29 @@ function TechStackSection() {
         <div className="row text--center">
           <div className="col col--3">
             <div className="padding--md">
-              <strong>Go</strong>
+              <img src="/img/tech/go.svg" alt="Go" style={{ width: '80px', height: '80px', marginBottom: '1rem' }} />
+              <h3>Go</h3>
               <p>High-performance backend</p>
             </div>
           </div>
           <div className="col col--3">
             <div className="padding--md">
-              <strong>React</strong>
+              <img src="/img/tech/react.svg" alt="React" style={{ width: '80px', height: '80px', marginBottom: '1rem' }} />
+              <h3>React</h3>
               <p>Modern frontend UI</p>
             </div>
           </div>
           <div className="col col--3">
             <div className="padding--md">
-              <strong>MongoDB</strong>
+              <img src="/img/tech/mongodb.svg" alt="MongoDB" style={{ width: '80px', height: '80px', marginBottom: '1rem' }} />
+              <h3>MongoDB</h3>
               <p>Flexible data storage</p>
             </div>
           </div>
           <div className="col col--3">
             <div className="padding--md">
-              <strong>Docker</strong>
+              <img src="/img/tech/docker.svg" alt="Docker" style={{ width: '80px', height: '80px', marginBottom: '1rem' }} />
+              <h3>Docker</h3>
               <p>Easy deployment</p>
             </div>
           </div>
