@@ -8,6 +8,10 @@ keywords: [nodetl, etl, data mapping, data transformation, workflow automation, 
 
 # Introduction to NodeTL
 
+[![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)](https://github.com/nodetl/nodetl/releases/tag/v1.0.1)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker)](https://hub.docker.com/r/nodetl/nodetl)
+
 **NodeTL** is a powerful, open-source **visual data mapping and transformation platform** designed for building ETL pipelines and automating data workflows. With an intuitive drag-and-drop interface, you can design complex data mappings, transform data between any schemas, and create automated integration workflows without writing complex code.
 
 ## What is NodeTL?

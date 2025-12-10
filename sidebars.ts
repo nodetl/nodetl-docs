@@ -69,6 +69,7 @@ const sidebars: SidebarsConfig = {
         'development/contributing',
       ],
     },
+    'changelog',
   ],
 };
 

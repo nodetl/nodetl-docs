@@ -9,6 +9,8 @@ keywords: [nodetl docker, docker deployment, container deployment, docker compos
 
 Deploy NodeTL using Docker for quick and easy setup.
 
+**Current Version: 1.0.1**
+
 ## Prerequisites
 
 - Docker 20.10+
@@ -32,13 +34,31 @@ Access at http://localhost:8602
 Single container with all components:
 
 ```bash
+# Using latest version
 docker run -d \
   --name nodetl \
   -p 8602:80 \
   -v nodetl_data:/data/db \
   -e JWT_SECRET=your-secret-key \
   nodetl/nodetl:latest
+
+# Or use specific version
+docker run -d \
+  --name nodetl \
+  -p 8602:80 \
+  -v nodetl_data:/data/db \
+  -e JWT_SECRET=your-secret-key \
+  nodetl/nodetl:1.0.1
 ```
+
+## Available Tags
+
+| Tag | Description |
+|-----|-------------|
+| `latest` | Latest stable release |
+| `1.0.1` | Version 1.0.1 (current) |
+| `1.0.0` | Version 1.0.0 |
+| `1.0` | Latest 1.0.x release |
 
 ## Environment Variables
 

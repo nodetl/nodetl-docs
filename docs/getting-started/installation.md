@@ -77,8 +77,11 @@ This single container includes:
 Pull and run from Docker Hub:
 
 ```bash
-# Pull the latest image
+# Pull the latest image (v1.0.1)
 docker pull nodetl/nodetl:latest
+
+# Or pull a specific version
+docker pull nodetl/nodetl:1.0.1
 
 # Run with persistent storage
 docker run -d \
@@ -86,7 +89,7 @@ docker run -d \
   -p 8602:80 \
   -v nodetl_data:/data/db \
   -e JWT_SECRET=your-secret-key \
-  nodetl/nodetl:latest
+  nodetl/nodetl:1.0.1
 ```
 
 ### Development Setup {#development-setup}
